@@ -56,7 +56,7 @@ class Solution {
             }
         }
         return true;
-
+**********************************************************************************************
 Question_No 2) Range sum of Sorted Subarray Sums
 
 You are given the array nums consisting of n positive integers. 
@@ -102,6 +102,46 @@ Explanation: All subarray sums are 1, 3, 6, 10, 2, 5, 9, 3, 7, 4.
         
     }
 }
+
+**********************************************************************************************
+Question_No:3) kth distinct string in an array.
+
+Given an array of strings arr, and an integer k, return the kth distinct string present in arr.
+ If there are fewer than k distinct strings, return an empty string "".
+
+Note that the strings are considered in the order in which they appear in the array.
+
+Example 1:
+Input: arr = ["d","b","c","b","c","a"], k = 2
+Output: "a"
+Explanation:
+The only distinct strings in arr are "d" and "a".
+"d" appears 1st, so it is the 1st distinct string.
+"a" appears 2nd, so it is the 2nd distinct string.
+Since k == 2, "a" is returned. A distinct string is a string that is present only once in an array.
+
+Solutions:
+class Solution {
+    public String kthDistinct(String[] arr, int k) {
+       HashMap<String,Integer> freqMap = new HashMap<>();
+        for(String str:arr){
+            freqMap.put(str, freqMap.getOrDefault(str,0)+1);
+        }
+        for(String str:arr){
+            if(freqMap.get(str)==1){
+                k--;
+            }
+            if(k==0){
+                return str;
+
+            }
+        }
+        return "";
+
+        
+    }
+}
+**********************************************************************************************
 
  
         
