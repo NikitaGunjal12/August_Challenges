@@ -384,15 +384,15 @@ Given the grid grid represented as a string array, return the number of regions.
 Note that backslash characters are escaped, so a '\' is represented as '\\'.
 
 Example 1:
-----------------------------------------------
+--------------------------------------------------
 Input: grid = [" /","/ "]
 Output: 2
 Example 2:
-----------------------------------------------
+--------------------------------------------------
 Input: grid = [" /","  "]
 Output: 1
 Example 3:
-----------------------------------------------
+--------------------------------------------------
 Input: grid = ["/\\","\\/"]
 Output: 5
 Explanation: Recall that because \ characters are escaped, "\\/" refers to \/, and "/\\" refers to /\.
