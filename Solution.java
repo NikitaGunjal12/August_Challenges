@@ -755,7 +755,7 @@ class Solution {
         return ans;
     }
 }
-********************************************************************
+********************************************************************************
 Question_No 15)Maximum number of points with cost
 You are given an m x n integer matrix points (0-indexed). Starting with 0 points, you want to maximize the number of points you can get from the matrix.
 To gain points, you must pick one cell in each row.
@@ -812,7 +812,6 @@ class Solution {
       for (int j = 0; j < n; ++j)
         dp[j] = Math.max(leftToRight[j], rightToLeft[j]) + row[j];
     }
-
     return Arrays.stream(dp).max().getAsLong();
   }
 }
@@ -848,6 +847,14 @@ class Solution {
 }
 *********************************************************************************
 Question_No 17)
+
+
+
+
+
+
+
+
 
  
  
