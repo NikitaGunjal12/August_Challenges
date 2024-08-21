@@ -1,3 +1,4 @@
+/* 
 **//August LeetCode Questions and Solutions
 /* Question_No:1)Make Two Arrays equal By Reversing subArrays
 You are given two integer arrays of equal length target and arr. In one step, you can select any non-empty subarray of arr and reverse it.
@@ -139,7 +140,7 @@ class Solution {
         return "";
 
         
-    }
+}
 }
 **********************************************************************************************
 Question_No 4)Minimum Number of pushes to Type Word II
@@ -863,3 +864,6 @@ Question_No 17)
         
     }
 }
+
+
+*/
