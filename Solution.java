@@ -450,12 +450,9 @@ class Solution {
 Question_No 9)
 minimum number of days to disconnect island
 
-ou are given an m x n binary grid grid where 1 represents land and 0 represents water. An island is a maximal 4-directionally (horizontal or vertical) connected group of 1's.
-
+You are given an m x n binary grid grid where 1 represents land and 0 represents water. An island is a maximal 4-directionally (horizontal or vertical) connected group of 1's.
 The grid is said to be connected if we have exactly one island, otherwise is said disconnected.
-
 In one day, we are allowed to change any single land cell (1) into a water cell (0).
-
 Return the minimum number of days to disconnect the grid.
 Example 1:
 
@@ -534,7 +531,6 @@ Question_No 10) Kth Largest Element in a Stream
 Design a class to find the kth largest element in a stream. 
 Note that it is the kth largest element in the sorted order, not the kth distinct element.
 Implement KthLargest class:
-
 KthLargest(int k, int[] nums) Initializes the object with the integer k and the stream of integers nums.
 int add(int val) Appends the integer val to the stream and returns the element representing the kth largest element in the stream.
 Example 1:
@@ -580,7 +576,6 @@ class KthLargest {
  *************************************************************************
  Question_No 11)Combination Sum II
  Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sum to target.
-
 Each number in candidates may only be used once in the combination.
 Note: The solution set must not contain duplicate combinations
 Example 1:
@@ -670,9 +665,7 @@ class Solution {
 ****************************************************************
 Question_No)13 Lemonade Change
 At a lemonade stand, each lemonade costs $5. Customers are standing in a queue to buy from you and order one at a time (in the order specified by bills). Each customer will only buy one lemonade and pay with either a $5, $10, or $20 bill. You must provide the correct change to each customer so that the net transaction is that the customer pays $5.
-
 Note that you do not have any change in hand at first.
-
 Given an integer array bills where bills[i] is the bill the ith customer pays, return true if you can provide every customer with the correct change, or false otherwise.
 
  
@@ -687,7 +680,6 @@ From the fourth customer, we collect a $10 bill and give back a $5.
 From the fifth customer, we give a $10 bill and a $5 bill.
 Since all customers got correct change, we output true.
 Example 2:
-
 Input: bills = [5,5,10,10,20]
 Output: false
 Explanation: 
@@ -761,7 +753,6 @@ Question_No 15)Maximum number of points with cost
 You are given an m x n integer matrix points (0-indexed). Starting with 0 points, you want to maximize the number of points you can get from the matrix.
 To gain points, you must pick one cell in each row.
  Picking the cell at coordinates (r, c) will add points[r][c] to your score.
-
 However, you will lose points if you pick a cell too far from the cell that you picked in the previous row. For every two adjacent rows r and r + 1 (where 0 <= r < m - 1), picking cells at coordinates (r, c1) and (r + 1, c2) will subtract abs(c1 - c2) from your score.
 Return the maximum number of points you can achieve.
 
@@ -816,8 +807,6 @@ class Solution {
     return Arrays.stream(dp).max().getAsLong();
   }
 }
-
-
 ***************************************************************************An ugly number is a positive integer whose prime factors are limited to 2, 3, and 5.
 Question_No 16)Ugly Number II
 Given an integer n, return the nth ugly number.
