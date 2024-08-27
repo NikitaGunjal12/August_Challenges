@@ -296,7 +296,6 @@ Explanation:
 The following subgrid is a 3 x 3 magic square:
 while this one is not:
 In total, there is only one magic square inside the given grid.
-
 Solution:
 class Solution {
     public int findRowSum(int grid[][], int r, int c){
@@ -322,7 +321,6 @@ class Solution {
        }
        return sum;
     }
-
     public int findColSum(int grid[][], int r, int c){
        int sum=0;
        for(int j=0;j<3;j++){
@@ -603,7 +601,6 @@ class Solution {
     dfs(0, candidates, target, new ArrayList<>(), ans);
     return ans;
   }
-
   private void dfs(int s, int[] candidates, int target, List<Integer> path,
                    List<List<Integer>> ans) {
     if (target < 0)
@@ -625,7 +622,6 @@ class Solution {
 ****************************************************************************
 Question_No 12) Find Kth Smallest Pair Distance
 The distance of a pair of integers a and b is defined as the absolute difference between a and b.
-
 Given an integer array nums and an integer k, return the kth smallest distance among all the pairs nums[i] and nums[j] where 0 <= i < j < nums.length.
 Example 1:
 Input: nums = [1,3,1], k = 1
