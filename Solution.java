@@ -683,7 +683,6 @@ From the first two customers in order, we collect two $5 bills.
 For the next two customers in order, we collect a $10 bill and give back a $5 bill.
 For the last customer, we can not give the change of $15 back because we only have two $10 bills.
 Since not every customer received the correct change, the answer is false.
- 
 Solution:
 class Solution {
     public boolean lemonadeChange(int[] bills) {
@@ -726,7 +725,6 @@ Example 2:
 
 Input: arrays = [[1],[1]]
 Output: 0
-
 Solution:
 class Solution {
     public int maxDistance(List<List<Integer>> arrays) {
@@ -751,7 +749,6 @@ To gain points, you must pick one cell in each row.
  Picking the cell at coordinates (r, c) will add points[r][c] to your score.
 However, you will lose points if you pick a cell too far from the cell that you picked in the previous row. For every two adjacent rows r and r + 1 (where 0 <= r < m - 1), picking cells at coordinates (r, c1) and (r + 1, c2) will subtract abs(c1 - c2) from your score.
 Return the maximum number of points you can achieve.
-
 abs(x) is defined as:
 x for x >= 0.
 -x for x < 0.
