@@ -555,8 +555,6 @@ class KthLargest {
             add(num);
         }
     }
-       
-    
     public int add(int val) {
          if(pq.size()<k || val>pq.peek()){
             pq.offer(val);
@@ -568,7 +566,6 @@ class KthLargest {
         
     }
 }
-
 
  *************************************************************************
  Question_No 11)Combination Sum II
@@ -592,7 +589,6 @@ Output:
 [5]
 ]
 Solution:
-
 class Solution {
   public List<List<Integer>> combinationSum2(int[] candidates, int target) {
     List<List<Integer>> ans = new ArrayList<>();
