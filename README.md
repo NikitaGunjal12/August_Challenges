@@ -1,2 +1,2 @@
 # August_Challenges
-Leetcode Questions 
+Daily Leetcode Questions.
